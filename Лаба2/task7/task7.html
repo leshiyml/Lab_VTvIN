@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Видео</title>
+</head>
+
+<body>
+    <h1>Удовольствие от видео</h1>
+    <h3>Управление плеером</h3><br>
+    <video controls width="400" height="300" poster="posterimage.jpg">
+        <source src="landscape.mp4" type="video/mp4">
+        <source src="landscape.webm" type="video/webm">
+        <source src="landscape.ogv" type="video/ogg">
+        <object data="landscape.swf" type="application/x-shockwave-flash">
+            <param name="movie" value="landscape.swf">
+        </object>
+        <track default kind="subtitles" label="Русские" srclang="ru" src="landscape.vtt">
+    </video>
+</body>
+
+</html>
