@@ -13,10 +13,10 @@ body {
 }
 
 .subtitle {
-font-size: 30px;
-color: #12ac11;
-line-height: 1.2;
-text-decoration: underline;
+    font-size: 30px;
+    color: #12ac11;
+    line-height: 1.2;
+    text-decoration: underline;
 }
 
 .list {
@@ -24,5 +24,4 @@ text-decoration: underline;
     color: #444;
     font-style: oblique;
     list-style-type: square;
-
 }
