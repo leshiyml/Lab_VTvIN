@@ -1,0 +1,38 @@
+.list, .drop-cont{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list{
+    display: flex;
+    background-color: #444;
+}
+
+.drop{
+    position: relative;
+}
+
+.list a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.list li:hover a {
+    background-color: #333;
+}
+
+.drop-cont{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    min-width: 160px;
+}
+
+.drop:hover .drop-cont{
+    display: block;
+}
