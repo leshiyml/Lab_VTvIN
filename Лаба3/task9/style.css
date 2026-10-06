@@ -1,0 +1,170 @@
+/* Убираем отступы */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #cfcece;
+}
+
+
+/* Блок шапки */
+
+/* Задаем цвет и внутренние отступы */
+#header {
+    top:0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    background-color: #0a6d68;
+    padding: 0;
+}
+
+/* Выстрваиваем элементы горизонтально */
+#nav {
+    display: flex;
+}
+
+/* Задаем цвет текста убираем подчеркивание и задаем внутренние отступы */
+#nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 20px;
+}
+
+/* Фон для активной кнопки */
+#nav a.active {
+    background-color: #444;
+}
+
+/* Чтобы при нажатии на кнопку менялся фон */
+#nav a:active {
+    background-color: #444;
+}
+
+/* Конец шапки */
+
+
+/* Основной блок (с текстом) */
+
+/* Выстраиваем в ряд задоем отступы и фон */
+main{
+    display: flex;
+    margin: 90px 0 0 0;
+    width: 100%;
+    background-color: #fff;
+}
+
+/* Текст по бокам */
+
+/* Отступы и расположение текста */
+#left , #right{
+    text-align: justify;
+    padding-top: 8px;
+    margin: 0px 20px;
+    width: 20%;
+}
+
+/* Шрифт заголовков */
+#left h2, #right h2 {
+    font-size: 20px;
+}
+
+/* Шрифт текста */
+#left p, #right p {
+    font-size: 15px;
+}
+
+/* Картинка */
+#right img {
+    height: auto;
+    width: 100%;
+}
+
+/* Конец текста по бокам */
+
+/* Текст по центру */
+
+/* Отступы и расположение текста */
+#center {
+    padding-top: 8px;
+    padding-bottom: 0px;
+    width: 60%;
+} 
+
+/* Шрифт текста */
+#center p {
+    font-size: 20px;
+}
+
+/* Шрифт заголовков */
+#center h1 {
+    font-size: 28px;
+}
+
+/* Картинка */
+#center img{
+    height: auto;
+    width: 100%;
+}
+
+/* Конец текста по центру */
+
+/* Блок подвала */
+
+/* Задаем отступы */
+#footer {
+    background-color: #0a6d68;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding: 0;
+}
+
+/* Выстраиваем карточки в ряд */
+#cards {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* Правило для всех карточек */
+#card-1, #card-2, #card-3, #card-4 {
+    background-color: #cfcece;
+    padding: 20px;
+    width: 25%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Шрифт заголовков */
+#cards h2 {
+    font-size: 18px;
+    color: #000000;
+}
+
+/* Шрифт текста */
+#cards p {
+    font-size: 15px;
+    color: #333333;
+}
+
+/* Разделительные линии */
+#line {
+    height: 1px;
+    background-color: #696868;
+    margin: 15px auto;
+    width: 90%;
+}
+
+/* Нижняя плашка подвала */
+#footer-copy {
+    text-align: center;
+    margin: 20px 0px;
+    padding-top: 20px 0;
+}
+
+/* Текст я */
+#footer-copy p {
+    color: #ffffff;
+    font-size: 16px;
+    margin: 0;
+}
