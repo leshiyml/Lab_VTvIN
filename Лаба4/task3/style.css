@@ -1,0 +1,27 @@
+div p {
+    margin-bottom: 0px;
+}
+
+.first {
+    text-decoration-style: wavy;
+    text-decoration-line: underline;
+    text-decoration-color:blue;
+}
+
+.second {
+    text-decoration-style:dotted;
+    text-decoration-line: underline;
+    text-decoration-color:rgb(220, 66, 120);
+}
+
+.third {
+    text-decoration-style:dashed;
+    text-decoration-line: underline;
+    text-decoration-color:rgb(11, 133, 19);
+}
+
+.fourth {
+    text-decoration-style: double;
+    text-decoration-line: underline;
+    text-decoration-color:rgb(255, 0, 0);
+}

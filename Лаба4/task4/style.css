@@ -1,0 +1,14 @@
+div p {
+    border: 1px solid black;
+    padding: 5px;
+    width: 300px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+
+p:hover {
+    white-space: normal;
+    overflow: visible;
+}

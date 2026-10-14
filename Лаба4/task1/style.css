@@ -1,0 +1,27 @@
+.both {
+    resize: both;
+    width: 250px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.none {
+    resize: none;
+    width: 250px;
+    height: 150px;
+    margin: 20px 0px;
+}
+
+.horizontal {
+    resize: horizontal;
+    width: 250px;
+    height: 150px;
+    margin: 20px 0px;
+}
+
+.vertical {
+    resize: vertical;
+    width: 250px;
+    height: 150px;
+    margin: 20px 0px;
+}

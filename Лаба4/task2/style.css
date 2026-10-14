@@ -1,0 +1,31 @@
+.pointer {
+    cursor: pointer;
+    resize: none;
+    width: 250px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.progress {
+    cursor: progress;
+    resize: none;
+    width: 250px;
+    height: 150px;
+    margin: 20px 0px;
+}
+
+.wait {
+    cursor: wait;
+    resize: none;
+    width: 250px;
+    height: 150px;
+    margin: 20px 0px;
+}
+
+.img {
+    cursor: url(cursor.png) 0 0, default;
+    resize: none;
+    width: 250px;
+    height: 150px;
+    margin: 20px 0px;
+}
