@@ -1,50 +1,30 @@
-body{
+.buttons {
     display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
-.first-column {
-    margin-left: 10px;
-    font-weight: bold;
-    width: 48%;
+.btn {
+    font-family: Arial, sans-serif; 
+
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+
+    color: #000000;
+    background-color: #cccccc;
+    box-shadow: 0 0.2em 0.3em rgba(0,0,0,0.2); 
+    
+    font-size: 20px;
+    padding: 0.5em 1.2em;
+    border-radius: 0.4em;
 }
 
-.first-column .imges img{
-    width: 49%;
-
+.btn-sm {
+    font-size: 15px;
 }
 
-.first-column .imges .grayscale {
-    filter: grayscale(100%);
-}
-
-.first-column .imges .saturate {
-    filter: saturate(40%);
-}
-
-.first-column .imges .invert {
-    filter: invert(1);
-}
-
-
-.second-column {
-    margin-left: 50px;
-    width: 48%;
-    font-weight: bold;
-}
-
-.second-column .imges img{
-    width: 49%;
-
-}
-
-.second-column .imges .sepia {
-    filter: sepia(100%);
-}
-
-.second-column .imges .hue-rotate {
-    filter: hue-rotate(100deg);
-}
-
-.second-column .imges .contrast {
-    filter: contrast(50%);
+.btn-xl {
+    font-size: 24px;
 }

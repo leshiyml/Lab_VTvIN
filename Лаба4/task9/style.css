@@ -1,10 +1,50 @@
-h1 {
-    margin: 0;
+body{
+    display: flex;
 }
 
-p {
-    font-size: 20px;
-    column-width: auto;
-    column-count: 3;
-    text-align: justify;
+.first-column {
+    margin-left: 10px;
+    font-weight: bold;
+    width: 48%;
+}
+
+.first-column .imges img{
+    width: 49%;
+
+}
+
+.first-column .imges .grayscale {
+    filter: grayscale(100%);
+}
+
+.first-column .imges .saturate {
+    filter: saturate(40%);
+}
+
+.first-column .imges .invert {
+    filter: invert(1);
+}
+
+
+.second-column {
+    margin-left: 50px;
+    width: 48%;
+    font-weight: bold;
+}
+
+.second-column .imges img{
+    width: 49%;
+
+}
+
+.second-column .imges .sepia {
+    filter: sepia(100%);
+}
+
+.second-column .imges .hue-rotate {
+    filter: hue-rotate(100deg);
+}
+
+.second-column .imges .contrast {
+    filter: contrast(50%);
 }
