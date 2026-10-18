@@ -1,4 +1,4 @@
-.grid-container {
+.grid {
     display: grid;
 
     grid-template-columns: minmax(40px, 1fr) minmax(40px, 1fr);
@@ -8,13 +8,13 @@
     padding: 10px;
 }
 
-.grid-item {
+.item {
     background-color: #cccccc;
     padding: 10px;
 }
 
 @media (max-width: 600px) {
-    .grid-container {
+    .grid {
         grid-template-columns: 1fr;
     }
 }
