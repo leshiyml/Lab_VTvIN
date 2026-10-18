@@ -1,0 +1,10 @@
+h1 {
+    margin: 0;
+}
+
+p {
+    font-size: 20px;
+    column-width: auto;
+    column-count: 3;
+    text-align: justify;
+}

@@ -1,0 +1,30 @@
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn {
+    font-family: Arial, sans-serif; 
+
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+
+    color: #000000;
+    background-color: #cccccc;
+    box-shadow: 0 0.2em 0.3em rgba(0,0,0,0.2); 
+    
+    font-size: 20px;
+    padding: 0.5em 1.2em;
+    border-radius: 0.4em;
+}
+
+.btn-sm {
+    font-size: 15px;
+}
+
+.btn-xl {
+    font-size: 24px;
+}
