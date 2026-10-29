@@ -1,0 +1,35 @@
+body {
+    padding:30px;
+}
+
+.radial{
+    display: grid;
+    gap:10px;
+    grid-template-columns: repeat(6,1fr);
+}
+
+.box {
+    min-height: 300px;
+    border: 1px solid black;
+}
+
+.box-1{
+    background: radial-gradient(#a1e0ff,#178ac4);
+    width: 300px;
+    grid-column: span 3;
+}
+
+.box-2{
+    background: radial-gradient(#a1e0ff,#178ac4);
+    grid-column: span 3;
+}
+
+.box-4{
+    background: radial-gradient(circle closest-corner at 30px 50px, #87d7ff,#178ac4);
+    grid-column: span 3;
+}
+
+.box-5{
+    background: radial-gradient(circle at center, black 0%, black 5%,white 10%,white 15%, green 20%);
+    grid-column: span 3;
+}

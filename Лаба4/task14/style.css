@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.basic {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background-color: #cfdadf;
+    border: 2px solid #5a75a0;
+    overflow: hidden;
+}
+
+.tower {
+    position: absolute;
+    left: 80px;
+    bottom: 75px;
+    width: 45px;
+    height: 105px;
+    background-color: #ffffff;
+    z-index: 3;
+}
+
+/* Треугольная крыша башни */
+.tower::before {
+    content: "";
+    position: absolute;
+    top: -34px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 22.5px solid transparent;
+    border-right: 22.5px solid transparent;
+    border-bottom: 34px solid #c84d3d;
+}
+
+/* Квадратное окно башни */
+.tower::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 13.5px;
+    width: 18px;
+    height: 18px;
+    background-color: #4b5257;
+}
+
+.house {
+    position: absolute;
+    left: 125px;
+    width: 122px; 
+    bottom: 75px;
+    height: 50px;
+    background-color: #ffffff;
+    z-index: 2;
+}
+
+/* Крыша дома (::before) — заходит налево поверх башни и скашивается справа */
+.house::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    /* Смещаем крышу влево на -25px, чтобы этот «отросток» перекрыл башню */
+    left: -23px; 
+    /* Увеличиваем общую ширину крыши, чтобы компенсировать сдвиг влево */
+    width: 145px; 
+    height: 20px;
+    background-color: #c84d3d;
+    
+    /* Обновляем точки clip-path с учетом того, что теперь крыша стала шире:
+       0% 100%   - левый нижний угол на башне
+       0% 0%     - левый верхний угол на башне
+       88% 0%    - верхняя точка начала скоса справа
+       100% 100% - нижняя точка конца скоса (аккуратный треугольник) */
+    clip-path: polygon(0% 100%, 0% 0%, 88% 0%, 100% 100%);
+}
+
+.house::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    width: 12px;
+    height: 16px;
+    background-color: #4b5257;
+    
+    box-shadow: 
+        16px 0 0 #4b5257, 
+        32px 0 0 #4b5257, 
+        56px 0 0 #4b5257, 
+        72px 0 0 #4b5257;
+}
+
+.cloud {
+    position: absolute;
+    top: 75px;
+    left: 120px;
+    width: 65px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    z-index: 1;
+    animation: move 10s linear infinite;
+}
+
+/* Маленькое облачко (::after по условию) */
+.cloud::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 55px;
+    width: 45px;
+    height: 14px;
+    background-color: #fff;
+    border-radius: 7px;
+}
+
+@keyframes move {
+    from{
+        transform: translateX(-250px);
+    }
+    to{
+       transform: translateX(180px);
+    }
+}
