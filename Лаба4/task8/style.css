@@ -14,17 +14,17 @@
 
     color: #000000;
     background-color: #cccccc;
-    box-shadow: 0 0.2em 0.3em rgba(0,0,0,0.2); 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2); 
     
     font-size: 20px;
-    padding: 0.5em 1.2em;
-    border-radius: 0.4em;
+    padding: 8px 24px;
+    border-radius: 8px;
 }
 
-.btn-sm {
+.small {
     font-size: 15px;
 }
 
-.btn-xl {
-    font-size: 24px;
+.big {
+    font-size: 26px;
 }
