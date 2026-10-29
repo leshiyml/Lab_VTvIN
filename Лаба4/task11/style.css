@@ -13,8 +13,9 @@
     padding: 10px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .grid {
         grid-template-columns: 1fr;
+        grid-template-rows: minmax(60px, auto) minmax(60px, auto) minmax(60px, auto) minmax(60px, auto) minmax(60px, auto) minmax(60px, auto);
     }
 }

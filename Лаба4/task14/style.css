@@ -1,16 +1,13 @@
 body {
     margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .basic {
     position: relative;
     width: 320px;
     height: 320px;
-    border-radius: 50%;
+    margin: 200px auto;
+    border-radius: 160px;
     background-color: #cfdadf;
     border: 2px solid #5a75a0;
     overflow: hidden;
@@ -26,20 +23,16 @@ body {
     z-index: 3;
 }
 
-/* Треугольная крыша башни */
 .tower::before {
-    content: "";
+    content: "▲ ";
     position: absolute;
-    top: -34px;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-left: 22.5px solid transparent;
-    border-right: 22.5px solid transparent;
-    border-bottom: 34px solid #c84d3d;
+    top: -54.5px;
+    left: -9.5px;
+    font-size: 65px;
+    color: #c84d3d;
+    line-height: 1;
 }
 
-/* Квадратное окно башни */
 .tower::after {
     content: "";
     position: absolute;
@@ -60,24 +53,15 @@ body {
     z-index: 2;
 }
 
-/* Крыша дома (::before) — заходит налево поверх башни и скашивается справа */
 .house::before {
     content: "";
     position: absolute;
     top: -20px;
-    /* Смещаем крышу влево на -25px, чтобы этот «отросток» перекрыл башню */
     left: -23px; 
-    /* Увеличиваем общую ширину крыши, чтобы компенсировать сдвиг влево */
     width: 145px; 
     height: 20px;
     background-color: #c84d3d;
-    
-    /* Обновляем точки clip-path с учетом того, что теперь крыша стала шире:
-       0% 100%   - левый нижний угол на башне
-       0% 0%     - левый верхний угол на башне
-       88% 0%    - верхняя точка начала скоса справа
-       100% 100% - нижняя точка конца скоса (аккуратный треугольник) */
-    clip-path: polygon(0% 100%, 0% 0%, 88% 0%, 100% 100%);
+    border-top-right-radius: 17px 20px;
 }
 
 .house::after {
@@ -88,12 +72,7 @@ body {
     width: 12px;
     height: 16px;
     background-color: #4b5257;
-    
-    box-shadow: 
-        16px 0 0 #4b5257, 
-        32px 0 0 #4b5257, 
-        56px 0 0 #4b5257, 
-        72px 0 0 #4b5257;
+    box-shadow: 16px 0 0 #4b5257, 32px 0 0 #4b5257, 56px 0 0 #4b5257, 72px 0 0 #4b5257;
 }
 
 .cloud {
@@ -108,7 +87,6 @@ body {
     animation: move 10s linear infinite;
 }
 
-/* Маленькое облачко (::after по условию) */
 .cloud::after {
     content: "";
     position: absolute;

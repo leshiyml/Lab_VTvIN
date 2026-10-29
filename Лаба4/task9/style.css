@@ -1,4 +1,4 @@
-body{
+body {
     display: flex;
 }
 
@@ -10,7 +10,6 @@ body{
 
 .first-column .imges img{
     width: 49%;
-
 }
 
 .first-column .imges .grayscale {
