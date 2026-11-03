@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>task4_2</title>
+</head>
+
+<body>
+    <script>
+        let lang = prompt("Выберите язык (ru или by): ");
+        let week = [];
+        switch (lang){
+            case "ru":
+                week = ['Понедельник ',' Вторник ',' Среда ',' Четверг ',' Пятница ',' Суббота ',' Воскресенье '];
+                break;
+            case "by":
+                week = ['Панядзелак ',' Ауторак ',' Серада ',' Чацверг ',' Пятница ',' Субота ',' Нядзеля '];
+                break;
+            default:
+                alert("Неизвестный язык");
+        }
+
+        alert(week)
+    </script>
+</body>
+</html>
