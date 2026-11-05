@@ -3,25 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>task4_2</title>
+    <title>task5_2</title>
 </head>
 
 <body>
     <script>
-        let lang = prompt("Выберите язык (ru или by): ");
-        let week = [];
-        switch (lang){
-            case "ru":
-                week = ['Понедельник ',' Вторник ',' Среда ',' Четверг ',' Пятница ',' Суббота ',' Воскресенье '];
-                break;
-            case "by":
-                week = ['Панядзелак ',' Ауторак ',' Серада ',' Чацверг ',' Пятница ',' Субота ',' Нядзеля '];
-                break;
-            default:
-                alert("Неизвестный язык");
+        let obj = {
+            "Минск" : "Беларусь",
+            "Москва" : "Россия",
+            "Киев" : "Украина"
+        };
+        
+        for (let key in obj){
+            document.write(key + " - это " + obj[key] + ".<br>")
         }
-
-        alert(week)
     </script>
 </body>
 </html>
