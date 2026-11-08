@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>task6_4</title>
+</head>
+
+<body>
+    <script>
+        let num1 = Number(prompt("Введите число от 1 до 7: "));
+
+        let obj = {
+                1 : "Понедельник",
+                2 : "Вторник",
+                3 : "Среда",
+                4 : "Четверг",
+                5 : "Пятница",
+                6 : "Суббота",
+                7 : "Воскресенье"
+            };
+
+        function rez(a){
+            return obj[a];
+        };
+
+        if (num1 < 1 || num1 > 7){
+            alert('Введено неверное число');
+        }
+        else {
+            alert("День недели соответсвующий вашему числу равен: " + rez(num1));
+        }
+    </script>
+</body>
+</html>
