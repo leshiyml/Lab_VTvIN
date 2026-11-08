@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>task7_2</title>
+</head>
+
+<body>
+    <script>
+        function is_true(a,b){
+            if (Number(a) + Number(b) > 10){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+
+        let num1 = prompt("Введите первое число: ");
+        let num2 = prompt("Введите второе число: ");
+
+        alert("Больше ли 10 сумма чисел " + num1 + " и " + num2 + "   -   " + is_true(num1,num2))
+    </script>
+</body>
+</html>
